@@ -1,0 +1,192 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Font */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures footer stays at bottom */
+}
+
+/* Header */
+header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    padding: 15px 30px;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #e40046;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background: url('/img/bg.png') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    min-height: 400px;
+}
+
+.hero img {
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Search Bar Container */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+    border-radius: 50px;
+    padding: 5px 15px;
+}
+
+/* Search Input */
+.search-bar input {
+    padding: 12px 20px;
+    border: 1px solid #d1d1d1;
+    border-radius: 30px;
+    width: 300px;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    background-color: #f4f4f4;
+    transition: all 0.3s ease;
+}
+
+.search-bar input::placeholder {
+    color: #aaa;
+    font-size: 14px;
+}
+
+/* Focus Effect for Input */
+.search-bar input:focus {
+    background-color: #fff;
+    border-radius: 30px;
+    width: 350px;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding: 0 70px;
+    gap: 10px;
+    width: 100%;
+}
+
+/* Feature Divs */
+.feature {
+    position: relative;
+    width: 30%;
+    min-height: 250px;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+    border: 1px solid #d1d1d1;
+}
+
+.feature-text {
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.feature-text p {
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Hover Effect for Feature Sections */
+.feature:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e40046;
+}
+
+.feature:hover > .feature-text {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ec4545;
+    margin-top: 50px;
+    font-size: 14px;
+    color: #ffffff;
+    margin-top: auto;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .feature {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .feature {
+        width: 100%;
+    }
+}
