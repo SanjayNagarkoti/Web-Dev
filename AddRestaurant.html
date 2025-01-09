@@ -1,15 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Add a restaurant | Zomato</title>
-</head>
-<body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: black;
+        background-image: url('img/addbg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .navigation {
+        color: white;
+      }
+      .help-text a {
+        text-decoration: none;
+        color: white;
+      }
+      .login {
+        display: inline-block;
+        width: 50px;
+        height: 20px;
+        border: 1px solid white;
+        border-radius: 20px;
+        padding: 8px 20px;
+        text-align: center;
+      }
+      .register{
+        width: 250px;
+        height: 40px;
+        padding: 10px 20px;
+        background-color: rgb(0, 89, 255) ;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 15px;
+      }
+      .disp{
+        text-align: center;
+        padding: 100px 0px;
+      }
+    </style>
+  </head>
+  <body>
     <header>
-        <img src="img/addlogo.png" alt="logo">
+      <div class="navigation">
+        <img src="img/addlogo.png" alt="logo" />
+        <div class="help">
+          <p class="help-text">
+            <a href="tel:+8097582577">Need help? Call +91 80-97-58-25-77</a>
+          </p>
+        </div>
+        <div class="login">Login</div>
+      </div>
     </header>
-    <main></main>
+    <main>
+        <section class="disp">
+            <h1>Partner with Zomato and grow your business</h1>
+            <p> 0% commission for the 1st month for new restaurant partners in selected cities</p>
+            <button class="register">Register your restaurant</button>
+        </section>
+    </main>
     <footer></footer>
-</body>
+  </body>
 </html>
