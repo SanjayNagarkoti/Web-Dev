@@ -11,7 +11,7 @@
       }
       body {
         background-color: black;
-        background-image: url('img/addbg.png');
+        background-image: url("img/addbg.png");
         background-size: cover;
         background-repeat: no-repeat;
       }
@@ -31,20 +31,42 @@
         padding: 8px 20px;
         text-align: center;
       }
-      .register{
+      .register {
         width: 250px;
         height: 40px;
         padding: 10px 20px;
-        background-color: rgb(0, 89, 255) ;
+        background-color: rgb(0, 89, 255);
         color: white;
         border: none;
         border-radius: 10px;
         text-align: center;
         font-size: 15px;
       }
-      .disp{
+
+      .disp {
         text-align: center;
-        padding: 100px 0px;
+      }
+      .disp h1 {
+        font-size: 40px;
+        font-weight: 700;
+      }
+      .disp p {
+        font-size: 20px;
+        font-weight: 500;
+        margin: 15px 0px;
+        color: rgb(63, 63, 63);
+      }
+      .requiredcard {
+        margin: 100px;
+        width: 200px;
+        height: 200px;
+        background-color: #fff;
+        border: 1px solid rgb(212, 211, 211);
+        border-radius: 20px;
+        --tw-shadow: 0px 8px 12px 0px rgba(28, 28, 28, 0.08);
+        --tw-shadow-colored: 0px 8px 12px 0px var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+          var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
       }
     </style>
   </head>
@@ -61,11 +83,45 @@
       </div>
     </header>
     <main>
-        <section class="disp">
-            <h1>Partner with Zomato and grow your business</h1>
-            <p> 0% commission for the 1st month for new restaurant partners in selected cities</p>
-            <button class="register">Register your restaurant</button>
-        </section>
+      <section class="disp">
+        <h1>Partner with Zomato</h1>
+        <h1>and grow your bussiness</h1>
+        <p>
+          0% commission for the 1st month for new restaurant partners in
+          selected cities
+        </p>
+        <button class="register">Register your restaurant</button>
+      </section>
+      <section class="requiremets">
+        <div class="requiredcard">
+          <h1>Get Started - It only takes 10 minutes</h1>
+          <p>Please be ready with the following for a smooth registration</p>
+          <div>PAN card</div>
+          <div>
+            GST number, if applicable
+            <span>
+              Require a GST?
+              <a
+                href="https://www.zomato.com/restaurant-services-hub/gst/?referrer=appdiytool_banner"
+                >Apply here</a
+              >
+            </span>
+          </div>
+          <div>Bank account details</div>
+          <div>Menu details and one dish image</div>
+          <div>
+            FSSAI license
+            <span>
+              Don't have an FSSAI license?
+              <a
+                href="https://www.zomato.com/restaurant-services-hub/fssai/?referrer=appdiytool_banner"
+                >Apply here</a
+              >
+            </span>
+          </div>
+          <video src="https://b.zmtcdn.com/data/file_assets/5835a67ef0191da3b505988b3ff9a0141720502359.mp4" class="registertutorial"></video>
+        </div>
+      </section>
     </main>
     <footer></footer>
   </body>
