@@ -10,19 +10,23 @@
         padding: 0;
       }
       body {
-        background-color: black;
-        background-image: url("img/addbg.png");
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-color: black;  
+      }
+      header {
+        position: relative;
+        z-index: 10; 
       }
      
       .navigation {
+        position: absolute;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 15px 120px;
         color: white;
         border-style: none;
+        width: 80vw;
+
       }
       .navigation img {
         width: 95px;
@@ -30,7 +34,7 @@
       .help-text a {
         text-decoration: none;
         color: white;
-        margin-left: 595px;
+        margin-left: 713px;
       }
       .login {
         display: inline-block;
@@ -51,11 +55,13 @@
         border-radius: 10px;
         text-align: center;
         font-size: 15px;
+        margin-top: 20px;
       }
 
       .disp {
-        margin-top: 90px;
+        width: 100%;
         text-align: center;
+        padding: 125px 0px;
       }
       .disp h1 {
         font-size: 45px;
@@ -66,6 +72,10 @@
         font-weight: 500;
         margin: 15px 0px;
         color: rgb(63, 63, 63);
+      }
+      img{
+        position: absolute;
+        z-index: -1;
       }
     </style>
   </head>
@@ -82,8 +92,11 @@
       </div>
     </header>
     <main>
-      <section class="disp">
-        <h1>Partner with Zomato</h1>
+      <div class="img">
+        <img src="img/addbg.png" alt="addrestaurant" />
+      </div>
+        <section class="disp">
+          <h1>Partner with Zomato</h1>
         <h1>and grow your bussiness</h1>
         <p>
           0% commission for the 1st month for new restaurant partners in
