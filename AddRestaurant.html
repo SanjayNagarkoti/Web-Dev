@@ -6,21 +6,35 @@
     <title>Add a restaurant | Zomato</title>
     <style>
       * {
-        margin: 0;
+        margin: 0; 
         padding: 0;
       }
       body {
-        background-color: black;
-        background-image: url('img/addbg.png');
-        background-size: cover;
-        background-repeat: no-repeat;
+        background-color: black;  
       }
+      header {
+        position: relative;
+        z-index: 10; 
+      }
+     
       .navigation {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 120px;
         color: white;
+        border-style: none;
+        width: 80vw;
+
+      }
+      .navigation img {
+        width: 95px;
       }
       .help-text a {
         text-decoration: none;
         color: white;
+        margin-left: 713px;
       }
       .login {
         display: inline-block;
@@ -31,20 +45,37 @@
         padding: 8px 20px;
         text-align: center;
       }
-      .register{
+      .register {
         width: 250px;
         height: 40px;
         padding: 10px 20px;
-        background-color: rgb(0, 89, 255) ;
+        background-color: rgb(0, 89, 255);
         color: white;
         border: none;
         border-radius: 10px;
         text-align: center;
         font-size: 15px;
+        margin-top: 20px;
       }
-      .disp{
+
+      .disp {
+        width: 100%;
         text-align: center;
-        padding: 100px 0px;
+        padding: 125px 0px;
+      }
+      .disp h1 {
+        font-size: 45px;
+        font-weight: 700;
+      }
+      .disp p {
+        font-size: 25px;
+        font-weight: 500;
+        margin: 15px 0px;
+        color: rgb(63, 63, 63);
+      }
+      img{
+        position: absolute;
+        z-index: -1;
       }
     </style>
   </head>
@@ -61,11 +92,18 @@
       </div>
     </header>
     <main>
+      <div class="img">
+        <img src="img/addbg.png" alt="addrestaurant" />
+      </div>
         <section class="disp">
-            <h1>Partner with Zomato and grow your business</h1>
-            <p> 0% commission for the 1st month for new restaurant partners in selected cities</p>
-            <button class="register">Register your restaurant</button>
-        </section>
+          <h1>Partner with Zomato</h1>
+        <h1>and grow your bussiness</h1>
+        <p>
+          0% commission for the 1st month for new restaurant partners in
+          selected cities
+        </p>
+        <button class="register">Register your restaurant</button>
+      </section>
     </main>
     <footer></footer>
   </body>
